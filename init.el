@@ -67,7 +67,7 @@
 (setq make-backup-files nil)
 (load-theme 'monokai 1)
 
-(add-hookx 'emacs-lisp-mode-hook 'show-paren-mode)
+(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 (global-hl-line-mode t)
 
