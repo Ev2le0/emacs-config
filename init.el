@@ -22,6 +22,7 @@
 			   counsel
 			   smartparens
 			   monokai-theme
+			   org
 			   ) "default packages")
 (setq package-selected-packages zhangli/packages)
 (defun zhangli/packages-installed-p ()
@@ -56,7 +57,7 @@
  ;; If there is more than one, they won't work right.
  '(company-minimum-prefix-length 1)
  '(cua-mode t nil (cua-base))
- '(package-selected-packages (quote (company))) 
+ '(package-selected-packages (quote (org company)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 
@@ -114,3 +115,9 @@ This command is convenient when reading novel, documentation."
 ;; make cursor not blink
 (blink-cursor-mode 0)
 ;;(setq pop-up-frames t)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
