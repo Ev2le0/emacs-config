@@ -7,6 +7,7 @@
  '(company-minimum-prefix-length 1)
  '(cua-mode t nil (cua-base))
  '(package-selected-packages (quote (org company)))
+ '(popwin:popup-window-position (quote right))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 ;;(setq pop-up-frames t)

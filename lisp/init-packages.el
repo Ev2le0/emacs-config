@@ -16,6 +16,7 @@
 			   smartparens
 			   monokai-theme
 			   ivy
+			   popwin
 			   ) "default packages")
 
 (setq package-selected-packages zhangli/packages)
@@ -35,4 +36,5 @@
 (sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
+(popwin-mode t)
 (provide 'init-packages)
