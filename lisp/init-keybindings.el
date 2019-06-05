@@ -14,5 +14,7 @@
 (global-set-key (kbd "M-s o") 'occur-dwim)
 (global-set-key (kbd "M-s i") 'counsel-imenu)
 (global-set-key (kbd "C-=") 'er/expand-region)
+;; r aka remember
+(global-set-key (kbd "C-c r") 'org-capture)
 (global-set-key (kbd "M-s e") 'iedit-mode)
 (provide 'init-keybindings)

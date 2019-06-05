@@ -1,0 +1,7 @@
+* 工作安排
+
+** TODO [#B] 第一天的工作
+
+** TODO [#B] 试用emacs的org-mode
+   DEADLINE: <2019-06-05 三 20:00> SCHEDULED: <2019-06-05 三 19:00>
+
