@@ -17,6 +17,8 @@
 			   monokai-theme
 			   ivy
 			   popwin
+			   expand-region
+			   iedit
 			   ) "default packages")
 
 (setq package-selected-packages zhangli/packages)
