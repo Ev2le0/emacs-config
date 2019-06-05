@@ -15,7 +15,6 @@
 			   counsel
 			   smartparens
 			   monokai-theme
-			   org
 			   ) "default packages")
 
 (setq package-selected-packages zhangli/packages)

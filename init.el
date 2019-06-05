@@ -1,7 +1,7 @@
 (package-initialize)
 (require 'cl)
 (require 'dired-x)
-
+(require 'org-tempo)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 ;; modular config
