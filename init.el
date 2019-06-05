@@ -11,7 +11,8 @@
 
 ;; cl - common Lisp Extension
 (require 'cl)
-
+(require 'dired-x)
+;;(require 'popwin)
 ;; Add Packages
 (defvar zhangli/packages '(
 			   ;; --- Auto-completion ---
@@ -41,19 +42,21 @@
 (set-background-color "honeydew")
 ;; todo
 (cua-mode 1)
+;; recentf mode
+(recentf-mode 1)
 ;; auto insert closing bracket
 (electric-pair-mode 1)
-;; make cursor movment stop in between camelCase words
-(global-subword-mode 1)
+;; make cursor movment stop in between camelCase wo(global-subword-mode 1)
 ;; make typing delete/overwrites selected text
 (delete-selection-mode 1)
 ;; auto-company
 (add-hook 'after-init-hook 'global-company-mode)
-
+;; popwin mode
+;;(popwin-mode 1)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
+ ;; Your init file should contain only oqne such instance.
  ;; If there is more than one, they won't work right.
  '(company-minimum-prefix-length 1)
  '(cua-mode t nil (cua-base))
@@ -88,12 +91,15 @@
 (setq inhibit-splash-screen t)
 
 (global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 (global-set-key (kbd "C-h f") 'counsel-describe-function)
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
 (global-set-key (kbd "C-h C-f") 'find-function)
 (global-set-key (kbd "C-h C-v") 'find-variable)
 (global-set-key (kbd "C-h C-k") 'find-function-on-key)
+(global-set-key (kbd "\C-x\ \C-r") 'recentf-open-files)
+(global-set-key (kbd "s-/") 'hippie-expand)
 (save-place-mode t)
 ;; UTF-8 as default enconding
 (set-language-environment "UTF-8")
@@ -121,3 +127,22 @@ This command is convenient when reading novel, documentation."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(setq hippie-expand-try-function-list '(try-expand-debbrev
+					try-expand-debbrev-all-buffers
+					try-expand-debbrev-from-kill
+					try-complete-file-name-partially
+					try-complete-file-name
+					try-expand-all-abbrevs
+					try-expand-list
+					try-expand-line
+					try-complete-lisp-symbol-partially
+					try-complete-lisp-symbol))
+
+(setq dired-recursive-copies 'always)
+(setq dired-recursive-deletes 'always)
+(with-eval-after-load 'dired
+  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
+(put 'dired-find-alternate-file 'disabled nil)
+
+(setq dired-dwim-target t)
