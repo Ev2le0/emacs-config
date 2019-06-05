@@ -10,4 +10,5 @@
 (global-set-key (kbd "C-h C-k") 'find-function-on-key)
 (global-set-key (kbd "\C-x\ \C-r") 'recentf-open-files)
 (global-set-key (kbd "s-/") 'hippie-expand)
+(global-set-key (kbd "C-c a") 'org-agenda)
 (provide 'init-keybindings)
