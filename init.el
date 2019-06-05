@@ -4,7 +4,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
-;; moduler config
+;; modular config
 (require 'init-func)
 (require 'init-packages)
 (require 'init-better-defaults)
