@@ -20,6 +20,8 @@
 			   expand-region
 			   iedit
 			   helm-ag
+			   yasnippet
+			   auto-yasnippet
 			   ) "default packages")
 
 (setq package-selected-packages zhangli/packages)
@@ -40,4 +42,6 @@
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (popwin-mode t)
+(yas-reload-all)
+(add-hook 'prog-mode-hook #'yas-minor-mode)
 (provide 'init-packages)
