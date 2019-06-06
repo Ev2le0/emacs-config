@@ -26,4 +26,4 @@
 (define-key evil-visual-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
 
 
-(provide 'init-evil) 
+(provide 'init-evil)
