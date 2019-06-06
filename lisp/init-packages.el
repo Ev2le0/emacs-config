@@ -24,6 +24,8 @@
 			   auto-yasnippet
 			   evil
 			   evil-leader
+			   window-numbering
+			   powerline
 			   ) "default packages")
 
 (setq package-selected-packages zhangli/packages)
@@ -44,9 +46,10 @@
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (popwin-mode t)
-(require 'yasnippet)
 (yas-reload-all)
 (add-hook 'prog-mode-hook #'yas-minor-mode)
+(window-numbering-mode 1)
 (evil-mode 1)
 (global-evil-leader-mode 1)
+(powerline-default-theme)
 (provide 'init-packages)

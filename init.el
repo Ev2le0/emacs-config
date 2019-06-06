@@ -4,10 +4,12 @@
 (require 'org-tempo)
 (require 'popwin)
 (require 'iedit)
+(require 'yasnippet)
+(require 'powerline)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 ;; modular config
-(require 'init-func)
+(require 'init-func) 
 (require 'init-packages)
 (require 'init-better-defaults)
 (require 'init-ui)

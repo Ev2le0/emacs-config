@@ -19,7 +19,7 @@
   "sp" 'counsel-git-grep
   )
 
-;;(window-numbering-mode 1)
+
 
 
 ;;(global-evil-surround-mode 1)
