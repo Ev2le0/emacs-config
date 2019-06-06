@@ -19,14 +19,11 @@
   "sp" 'counsel-git-grep
   )
 
+(global-evil-surround-mode)
 
-
-
-;;(global-evil-surround-mode 1)
-
+(evilnc-default-hotkeys)
 (define-key evil-normal-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
 (define-key evil-visual-state-map (kbd ",/") 'evilnc-comment-or-uncomment-lines)
 
-;;(evilnc-default-hotkeys)
 
-(provide 'init-evil)
+(provide 'init-evil) 

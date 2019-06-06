@@ -24,6 +24,8 @@
 			   auto-yasnippet
 			   evil
 			   evil-leader
+			   evil-surround
+			   evil-nerd-commenter
 			   window-numbering
 			   powerline
 			   ) "default packages")
