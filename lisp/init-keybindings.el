@@ -16,7 +16,7 @@
 ;;; about help keybindings end}}}
 
 ;;{{{ helm keybindings start
-(global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
+;;(global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
 (global-set-key (kbd "C-w") 'backward-kill-word)
 ;;}}}
 
@@ -34,6 +34,6 @@
 (global-set-key (kbd "M-s e") 'iedit-mode)
 (global-set-key (kbd "C-=") 'er/expand-region)
 (global-set-key (kbd "C-c n") 'new-line)
-(global-set-key (kbd "C-c p f") 'project-find-file)
+;;(global-set-key (kbd "C-c p f") 'project-find-file)
 ;; other keybindings end}}}
 (provide 'init-keybindings)
