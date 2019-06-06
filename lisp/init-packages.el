@@ -22,6 +22,7 @@
 			   helm-ag
 			   yasnippet
 			   auto-yasnippet
+			   evil
 			   ) "default packages")
 
 (setq package-selected-packages zhangli/packages)
@@ -45,4 +46,5 @@
 (require 'yasnippet)
 (yas-reload-all)
 (add-hook 'prog-mode-hook #'yas-minor-mode)
+(evil-mode 1)
 (provide 'init-packages)
