@@ -6,6 +6,7 @@
  '(company-idle-delay 0.08)
  '(company-minimum-prefix-length 1)
  '(cua-mode t nil (cua-base))
+ '(evil-leader/leader "SPC")
  '(evil-want-C-u-scroll t)
  '(package-selected-packages (quote (org company)))
  '(popwin:popup-window-position (quote right))

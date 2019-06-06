@@ -23,6 +23,7 @@
 			   yasnippet
 			   auto-yasnippet
 			   evil
+			   evil-leader
 			   ) "default packages")
 
 (setq package-selected-packages zhangli/packages)
@@ -47,4 +48,5 @@
 (yas-reload-all)
 (add-hook 'prog-mode-hook #'yas-minor-mode)
 (evil-mode 1)
+(global-evil-leader-mode 1)
 (provide 'init-packages)
