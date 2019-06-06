@@ -19,6 +19,7 @@
 			   popwin
 			   expand-region
 			   iedit
+			   helm-ag
 			   ) "default packages")
 
 (setq package-selected-packages zhangli/packages)
