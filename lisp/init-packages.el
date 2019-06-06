@@ -27,7 +27,6 @@
 			   evil-surround
 			   evil-nerd-commenter
 			   window-numbering
-			   powerline
 			   ) "default packages")
 
 (setq package-selected-packages zhangli/packages)
@@ -53,5 +52,4 @@
 (window-numbering-mode 1)
 (evil-mode 1)
 (global-evil-leader-mode 1)
-(powerline-default-theme)
 (provide 'init-packages)

@@ -5,7 +5,6 @@
 (require 'popwin)
 (require 'iedit)
 (require 'yasnippet)
-(require 'powerline)
 (require 'evil-surround)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
