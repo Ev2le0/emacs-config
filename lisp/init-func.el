@@ -13,4 +13,8 @@
 	      (regexp-quote sym))))
 	regexp-history)
   (call-interactively 'occur))
+(defun new-line()
+  (interactive)
+  (move-end-of-line 1)
+  (newline))
 (provide 'init-func)

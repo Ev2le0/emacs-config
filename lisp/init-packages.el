@@ -42,6 +42,7 @@
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (popwin-mode t)
+(require 'yasnippet)
 (yas-reload-all)
 (add-hook 'prog-mode-hook #'yas-minor-mode)
 (provide 'init-packages)
