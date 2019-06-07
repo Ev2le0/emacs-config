@@ -1,50 +1,50 @@
-(when (>= emacs-major-version 24)
-  (require 'package)
-  (package-initialize)
-  (setq package-archives '(("gun" . "http://elpa.emacs-china.org/gnu/")
-			   ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
+;; (when (>= emacs-major-version 24)
+;;   (require 'package)
+;;   (package-initialize)
+;;   (setq package-archives '(("gun" . "http://elpa.emacs-china.org/gnu/")
+;; 			   ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
 
 
-;; Add Packages
-(defvar zhangli/packages '(
-			   ;; --- Auto-completion ---
-			   company
-			   ;; --- Better Editor ---
-			   hungry-delete
-			   swiper
-			   counsel
-			   smartparens
-			   monokai-theme
-			   ivy
-			   popwin
-			   expand-region
-			   iedit
-			   helm-ag
-			   yasnippet
-			   auto-yasnippet
-			   evil
-			   evil-leader
-			   evil-surround
-			   evil-nerd-commenter
-			   window-numbering
-			   which-key
-			   use-package
-			  ;; pallet
-			   ;;cask
-			   ) "default packages")
+;; ;; Add Packages
+;; (defvar zhangli/packages '(
+;; 			   ;; --- Auto-completion ---
+;; 			   company
+;; 			   ;; --- Better Editor ---
+;; 			   hungry-delete
+;; 			   swiper
+;; 			   counsel
+;; 			   smartparens
+;; 			   monokai-theme
+;; 			   ivy
+;; 			   popwin
+;; 			   expand-region
+;; 			   iedit
+;; 			   helm-ag
+;; 			   yasnippet
+;; 			   auto-yasnippet
+;; 			   evil
+;; 			   evil-leader
+;; 			   evil-surround
+;; 			   evil-nerd-commenter
+;; 			   window-numbering
+;; 			   which-key
+;; 			   use-package
+;; 			   pallet
+;; 			   cask
+;; 			   ) "default packages")
 
-(setq package-selected-packages zhangli/packages)
-(defun zhangli/packages-installed-p ()
-  (loop for pkg in zhangli/packages
-	when (not (package-installed-p pkg)) do (return nil)
-	finally (return t)))
+;; (setq package-selected-packages zhangli/packages)
+;; (defun zhangli/packages-installed-p ()
+;;   (loop for pkg in zhangli/packages
+;; 	when (not (package-installed-p pkg)) do (return nil)
+;; 	finally (return t)))
 
-(unless (zhangli/packages-installed-p)
-  (message "%s" "Refreshing package database...")
-  (package-refresh-contents)
-  (dolist (pkg zhangli/packages)
-    (when (not (package-installed-p pkg))
-      (package-install pkg))))
+;; (unless (zhangli/packages-installed-p)
+;;   (message "%s" "Refreshing package database...")
+;;   (package-refresh-contents)
+;;   (dolist (pkg zhangli/packages)
+;;     (when (not (package-installed-p pkg))
+;;       (package-install pkg))))
 
 (smartparens-global-mode t)
 (sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
