@@ -1,7 +1,7 @@
 (package-initialize)
 (require 'cl)
 (require 'dired-x)
-(require 'org-tempo)
+;;(require 'org-tempo)
 (require 'popwin)
 (require 'iedit)
 (require 'yasnippet)

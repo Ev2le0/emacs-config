@@ -12,8 +12,8 @@
   "fj" 'dired-jump
   "w/" 'split-window-right
   "w-" 'split-window-below
-  ":" 'counsel-M-x
-  "wm" 'delete-other-windows
+  "SPC" 'counsel-M-x
+  "wd" 'delete-other-windows
   "qq" 'save-buffers-kill-terminal
   "sj" 'counsel-imenu
   "sp" 'counsel-git-grep

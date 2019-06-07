@@ -28,6 +28,9 @@
 			   evil-nerd-commenter
 			   window-numbering
 			   which-key
+			   use-package
+			  ;; pallet
+			   ;;cask
 			   ) "default packages")
 
 (setq package-selected-packages zhangli/packages)
@@ -45,6 +48,7 @@
 
 (smartparens-global-mode t)
 (sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
+(sp-local-pair 'emacs-lisp-mode "`" nil :actions nil)
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (popwin-mode t)
